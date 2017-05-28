@@ -1,9 +1,11 @@
 package psm.projekt.kalkulatorpodatkowy;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -12,13 +14,15 @@ import android.widget.ListView;
  * Created by grzeg on 22.05.2017.
  */
 
-public class WybierzKraj extends AppCompatActivity {
+public class WybierzKraj extends Activity {
 
     private ListView listKraje;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_wybierz_kraj);
 
         listKraje = (ListView)findViewById(R.id.listKraje);

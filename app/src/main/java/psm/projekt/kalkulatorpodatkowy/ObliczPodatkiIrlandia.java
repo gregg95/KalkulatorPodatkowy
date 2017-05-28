@@ -1,11 +1,13 @@
 package psm.projekt.kalkulatorpodatkowy;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.Window;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,7 +30,7 @@ import bsh.Interpreter;
  * Created by grzeg on 27.05.2017.
  */
 
-public class ObliczPodatkiIrlandia extends AppCompatActivity {
+public class ObliczPodatkiIrlandia extends Activity {
 
     Spinner rodzajKwoty;
     Spinner procent;
@@ -54,6 +56,7 @@ public class ObliczPodatkiIrlandia extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_oblicz_irlandia);
 
         btnOblicz = (Button) findViewById(R.id.btnObliczIrl);

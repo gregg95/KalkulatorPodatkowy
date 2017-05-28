@@ -12,7 +12,8 @@
         android:padding="10dp"
         android:text="Wybierz grupę podatkową, która odpowiada Twojej sytuacji."
         android:textColor="@color/text_color"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnGrupaA"

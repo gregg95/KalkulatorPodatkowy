@@ -1,16 +1,18 @@
 package psm.projekt.kalkulatorpodatkowy;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 /**
  * Created by grzeg on 25.05.2017.
  */
 
-public class PodatkiAnglia extends AppCompatActivity {
+public class PodatkiAnglia extends Activity {
 
     Button btnSpadek;
     Button btnUmowaOPrace;
@@ -18,6 +20,7 @@ public class PodatkiAnglia extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_anglia);
 
         btnSpadek = (Button)findViewById(R.id.btnSpadekAnglia);

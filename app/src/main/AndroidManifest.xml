@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
 
+
+            a
         <activity android:name=".WybierzKraj"></activity>
         <activity android:name=".PodatkiPolska"></activity>
         <activity android:name=".ObliczPodatki"></activity>
