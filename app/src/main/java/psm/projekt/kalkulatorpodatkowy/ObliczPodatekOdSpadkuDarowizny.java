@@ -32,7 +32,6 @@ public class ObliczPodatekOdSpadkuDarowizny extends AppCompatActivity {
 
     DatabaseReference ref;
     String grupa;
-    String przedzial;
     double w;
 
     ProgressBar progressBar;
@@ -120,8 +119,7 @@ public class ObliczPodatekOdSpadkuDarowizny extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         String wzor = dataSnapshot.getValue(String.class);
-                        Toast.makeText(ObliczPodatekOdSpadkuDarowizny.this, wzor,
-                                Toast.LENGTH_LONG).show();
+
                         try {
                             Interpreter interpreter = new Interpreter();
                             interpreter.set("W", w);
