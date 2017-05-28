@@ -22,6 +22,6 @@ Pole do wprowadzania wartości zostało zabezpieczone tak aby użytkownik wprowa
 Google Firebase:
 Baza danych przechowuje wszekie wzory obliczeniowe. Dostęp do bazy danych może być przyznany tylko bezpośrednio (tzn. konkretnemu użytkownikowi google). Firebase pozwala jednak wygenerować plik JSON na podstawie bazy danych. Link do tego pliku jest poniżej:
 
-[Link Text](https://pastebin.com/1Gvh22m1)
+[Firebase JSON](https://pastebin.com/1Gvh22m1)
 
 
